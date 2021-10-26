@@ -3,6 +3,50 @@
     Theme URI: http://www.jasondallen.dev
     Author: Jason
     Author UI: http://wwww.jasondallen.dev
-    Description: Sample theme for a library union
+    Description: Sample theme for my library union
     Version: 1.00
  */
+
+body {
+  background-color: #eee;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+header {
+  background-color: rgba(12, 56, 97, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header li {
+  padding-right: 1.25em;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  background-color: rgba(12, 56, 97, 0.5);
+}
+
+.footer-menu,
+.social ul {
+  display: flex;
+  justify-content: space-around;
+}
