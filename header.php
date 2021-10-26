@@ -7,4 +7,3 @@
     <title><?php bloginfo('name'); ?></title>
 </head>
 <body>
-    
