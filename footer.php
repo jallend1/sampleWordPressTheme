@@ -1,10 +1,10 @@
     <footer>
-        <div>
-            <h1 class="logo-text">
-                <a href="#"><?php bloginfo('name'); ?></a>
-            </h1>
-        </div>
         <div class="footer-menu">
+            <div>
+                <h1 class="logo-text">
+                    <a href="#"><?php bloginfo('name'); ?></a>
+                </h1>
+            </div>
             <div>
                 <h3>Engage</h3>
                 <nav>

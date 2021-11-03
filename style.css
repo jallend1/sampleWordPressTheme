@@ -42,11 +42,22 @@ footer a {
 }
 
 footer {
-  background-color: rgba(12, 56, 97, 0.5);
+  padding: 2rem 0;
+  background-image: linear-gradient(#fff, #ddd);
+  color: #666;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: #999;
 }
 
 .footer-menu,
 .social ul {
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
+  text-align: left;
 }
