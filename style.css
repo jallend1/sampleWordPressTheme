@@ -7,12 +7,17 @@
     Version: 1.1
  */
 
+html {
+  height: 100%;
+}
+
 body {
   background-color: #eee;
   color: #333;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  height: 95vh;
 }
 
 ul {
@@ -35,10 +40,41 @@ header li {
   padding-right: 1.25em;
 }
 
+header a {
+  color: #fff;
+}
+
 header a,
 footer a {
   text-decoration: none;
-  color: #fff;
+}
+
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 70%;
+}
+
+.banner-image {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mask-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 footer {
