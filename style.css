@@ -84,6 +84,17 @@ button {
   font-size: 1.5em;
 }
 
+.sections {
+  width: 85vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sections div {
+  margin: 0 1.25em;
+}
+
 footer {
   padding: 2rem 0;
   background-image: linear-gradient(#fff, #ddd);
