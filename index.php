@@ -5,7 +5,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/open-book.jpg">    
     </div>
     <div class="banner-content">
-        <h1>Welcome</h1>
+        <h1 class="heading">Welcome</h1>
         <h2>Workers of the world, unite!</h2>
         <button>Join</button>
     </div>

@@ -70,9 +70,34 @@ footer a {
   text-align: center;
 }
 
-.banner-content h1 {
+.heading {
   font-size: 5em;
   font-weight: 100;
+  margin: 0;
+}
+
+.subtitle {
+  color: #eee;
+}
+
+.page-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+  margin: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('./images/books.jpg');
+  background-size: cover;
+  min-height: 30vh;
+}
+
+.page-banner h1 {
+  color: #ddd;
 }
 
 button {
