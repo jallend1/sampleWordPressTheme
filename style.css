@@ -80,7 +80,14 @@ footer a {
   color: #eee;
 }
 
+.page-content {
+  line-height: 1.5em;
+  max-width: 60vw;
+  margin: auto;
+}
+
 .page-banner {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,6 +105,27 @@ footer a {
 
 .page-banner h1 {
   color: #ddd;
+}
+
+.page-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  transform: translateY(-50%);
+  font-size: 0.75em;
+}
+
+.page-nav div {
+  text-align: center;
+}
+
+.page-nav div {
+  background-color: green;
+  color: #eee;
+}
+
+.page-nav div:first-child {
+  background-color: #600a16;
+  color: #eee;
 }
 
 button {
