@@ -6,8 +6,10 @@
 <div class="page-content">
 <nav class="page-nav">
     <div>
-        <p>Home</p>
-    </div>
+        <a href="<?php site_url(); ?>">    
+            <p>Home</p>
+        </a>
+        </div>
     <div>
         <p><?php the_title(); ?></p>
     </div>

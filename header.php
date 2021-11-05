@@ -10,27 +10,21 @@
 <body>
     <header>
         <h1 class="logo-text">
-            <a href="#"><?php bloginfo('name'); ?></a>
+            <a href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         </h1>
         <nav>
             <ul>
                 <li>
-                    <a href="#">About Us</a>
+                    <a href="<?php echo site_url('/about-us')?>">About Us</a>
                 </li>
                 <li>
-                    <a href="#">Get Involved</a>
+                    <a href="<?php echo site_url('/get-involved'); ?>">Get Involved</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="<?php echo site_url('/events'); ?>">Events</a>
                 </li>
                 <li>
                     <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Login</a>
-                </li>
-                <li>
-                    <a href="#">Logout</a>
                 </li>
                 <li>
                     <i class="fa fa-search" aria-hidden="true"></i>

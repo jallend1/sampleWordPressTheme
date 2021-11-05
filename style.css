@@ -20,6 +20,11 @@ body {
   height: 95vh;
 }
 
+a {
+  text-decoration: none;
+  color: #999;
+}
+
 ul {
   padding: 0;
   list-style: none;
@@ -38,12 +43,6 @@ header nav ul {
 
 header li {
   padding-right: 1.25em;
-}
-
-header a,
-footer a {
-  text-decoration: none;
-  color: #999;
 }
 
 .banner {
@@ -116,10 +115,11 @@ footer a {
 
 .page-nav div {
   text-align: center;
+  background-color: green;
+  color: #eee;
 }
 
-.page-nav div {
-  background-color: green;
+.page-nav div a {
   color: #eee;
 }
 

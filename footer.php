@@ -2,16 +2,16 @@
         <div class="footer-menu">
             <div>
                 <h1 class="logo-text">
-                    <a href="#"><?php bloginfo('name'); ?></a>
+                    <a href="<?php site_url(); ?>"><?php bloginfo('name'); ?></a>
                 </h1>
             </div>
             <div>
                 <h3>Engage</h3>
                 <nav>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Get Involved</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="<?php site_url('/about-us'); ?>">About Us</a></li>
+                        <li><a href="<?php site_url('/get-involved'); ?>">Get Involved</a></li>
+                        <li><a href="<?php site_url('/events'); ?>">Events</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </nav>
