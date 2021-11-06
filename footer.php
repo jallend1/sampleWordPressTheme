@@ -20,9 +20,9 @@
                 <h3>Get Active</h3>
                 <nav>
                     <ul>
-                    <li><a href="#">Contracts</a></li>
-                    <li><a href="#">Renew Membership</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="<?php site_url('/contracts'); ?>">Contracts</a></li>
+                    <li><a href="<?php site_url('/renew'); ?>">Renew Membership</a></li>
+                    <li><a href="<?php site_url('/resources'); ?>">Resources</a></li>
                     </ul>
                 </nav>
             </div>
