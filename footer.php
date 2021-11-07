@@ -8,22 +8,17 @@
             <div>
                 <h3>Engage</h3>
                 <nav>
-                    <ul>
-                        <li><a href="<?php site_url('/about-us'); ?>">About Us</a></li>
-                        <li><a href="<?php site_url('/get-involved'); ?>">Get Involved</a></li>
-                        <li><a href="<?php site_url('/events'); ?>">Events</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'footerOne'
+                    )); ?>
                 </nav>
             </div>
             <div>
                 <h3>Get Active</h3>
                 <nav>
-                    <ul>
-                    <li><a href="<?php site_url('/contracts'); ?>">Contracts</a></li>
-                    <li><a href="<?php site_url('/renew'); ?>">Renew Membership</a></li>
-                    <li><a href="<?php site_url('/resources'); ?>">Resources</a></li>
-                    </ul>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'footerTwo'
+                    )); ?>
                 </nav>
             </div>
             <div>

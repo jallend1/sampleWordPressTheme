@@ -2,6 +2,9 @@
 
 function libraryUnionFeatures(){
     add_theme_support('title-tag');
+    register_nav_menu('headerMenu', 'Header Menu');
+    register_nav_menu('footerOne', 'Footer Location 1');
+    register_nav_menu('footerTwo', 'Footer Location 2');
 }
 
 function libraryUnionStyles() {
@@ -11,6 +14,6 @@ function libraryUnionStyles() {
 }
 
 add_action('wp_enqueue_scripts', 'libraryUnionStyles');
-add_action('init', 'libraryUnionFeatures');
+add_action('after_setup_theme', 'libraryUnionFeatures');
 
 ?>
