@@ -45,6 +45,10 @@ header li {
   padding-right: 1.25em;
 }
 
+.current-menu-item a {
+  color: rgb(70, 119, 224);
+}
+
 .banner {
   position: relative;
   width: 100vw;
