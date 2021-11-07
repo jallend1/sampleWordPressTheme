@@ -1,38 +1,28 @@
 <?php get_header(); ?>
 
-<div class="banner">
-    <div class="banner-image">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/open-book.jpg">    
-    </div>
-    <div class="banner-content">
-        <h1 class="heading">Welcome</h1>
-        <h2>Workers of the world, unite!</h2>
-        <button>Join</button>
-    </div>
+<div class="page-banner">
+    <h1 class="heading">Welcome to the blog!</h1>
+    <h2 class="subtitle">Stay up to date on the latest events.</h2>
 </div>
-<section class="sections">
-    <div class="events">
-        <h2>Event Calendar</h2>
-        <div class="event">
-            <h3>A fake event</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
+<div class="page-content">
+    <?php while(have_posts()){
+        the_post(); ?>
+    <div class="blog-post">
+        <h3 class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <div class="blog-details">
+            <p>Posted by 
+                <?php the_author_posts_link(); ?> 
+                on <?php the_time('F j, Y'); ?> 
+                in <?php echo get_the_category_list(', '); ?>.
+            </p>
         </div>
-        <div class="event">
-            <h3>Another fake event</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
+        <div class="blog-content">
+        <?php the_excerpt(); ?>
+        <p><a href="<?php echo the_permalink(); ?>">Continue reading &raquo; </a></p>
         </div>
-    </div>
-    <div class="blogs">
-        <h2>Our Latest News</h2>
-        <div>
-            <h3>A fake blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
-        </div>
-        <div>
-            <h3>Another fake blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
-        </div>
-    </div>
-</section>
+</div>
+
+    <?php } ?>
+</div>
 
 <?php get_footer(); ?>

@@ -18,30 +18,31 @@
                     <p><?php the_title(); ?></p>
                 </div>
             </nav>
-        <?php } ?>
-        <?php 
+    <?php } ?>
+    <?php 
+    // If post has children or parent, display little nav menu
         $testArray = get_pages(array(
             'child_of' => get_the_ID()
         ));
         if($parentPost or $testArray) { ?>
-    <div class="children-links">
-            <h2>
-                <a href="<?php echo get_permalink($parentPost); ?>"><?php echo get_the_title($parentPost);?></a>
-            </h2>
-            <ul>
-                <?php
-                if($parentPost){
-                    $childrenOf = $parentPost;
-                }else{
-                    $childrenOf = get_the_ID();
-                }
-                wp_list_pages(array(
-                    'title_li' => NULL,
-                    'child_of' => $childrenOf
-                )); 
-                ?>
-            </ul>
-    </div>
+            <div class="children-links">
+                <h2>
+                    <a href="<?php echo get_permalink($parentPost); ?>"><?php echo get_the_title($parentPost);?></a>
+                </h2>
+                <ul>
+                    <?php
+                    if($parentPost){
+                        $childrenOf = $parentPost;
+                    }else{
+                        $childrenOf = get_the_ID();
+                    }
+                    wp_list_pages(array(
+                        'title_li' => NULL,
+                        'child_of' => $childrenOf
+                    )); 
+                    ?>
+                </ul>
+            </div>
     <?php } ?>
     <?php the_content(); ?>
 </div>
