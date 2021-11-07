@@ -140,12 +140,9 @@ button {
 .sections {
   width: 85vw;
   margin: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
   justify-content: space-around;
-}
-
-.sections div {
-  margin: 0 1.25em;
 }
 
 footer {
