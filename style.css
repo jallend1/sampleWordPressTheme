@@ -146,13 +146,42 @@ button {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 400px);
-  justify-content: space-around;
+  column-gap: 100px;
+  justify-content: center;
+  line-height: 1.5em;
 }
 
 .blog-title a {
   color: rgb(157, 85, 163);
   font-size: 2em;
   font-weight: 300;
+}
+
+.front-blog {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 2em 0;
+}
+
+.front-blog a {
+  margin-top: 2em;
+}
+
+.front-date {
+  background-color: #5a9585;
+  border-radius: 50%;
+  width: 70px;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.front-date p {
+  margin: 0;
+  color: white;
+}
+
+.date {
+  font-size: 2em;
 }
 
 footer {

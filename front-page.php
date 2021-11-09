@@ -23,15 +23,27 @@
         </div>
     </div>
     <div class="blogs">
-        <h2>Our Latest News</h2>
-        <div>
-            <h3>A fake blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
-        </div>
-        <div>
-            <h3>Another fake blog</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti asperiores corporis, culpa aspernatur cupiditate neque iste dolorem rem blanditiis necessitatibus!</p>
-        </div>
+        <h2>Latest Union News</h2>
+        <?php 
+            $latestPosts = new WP_Query(array(
+                'posts_per_page' => 2,
+
+            ));
+            while($latestPosts -> have_posts()){
+                $latestPosts -> the_post(); ?>
+                <div class="front-blog">
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="front-date">
+                            <p class="month"><?php the_time('M'); ?></p>
+                            <p class="date"><?php the_time('d'); ?></p>
+                        </div>
+                    </a>
+                    <div class="front-details">
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <p><?php echo wp_trim_words(get_the_content(), 20); ?> <a href="<?php the_permalink(); ?>">Read more</a></p>
+                    </div>
+                </div>
+        <?php } wp_reset_postdata(); ?>
     </div>
 </section>
 
