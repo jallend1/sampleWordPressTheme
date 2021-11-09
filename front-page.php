@@ -44,6 +44,9 @@
                     </div>
                 </div>
         <?php } wp_reset_postdata(); ?>
+    <p>
+        <a href="<?php echo site_url('/blog'); ?>">View the blog</a>
+    </p>
     </div>
 </section>
 
