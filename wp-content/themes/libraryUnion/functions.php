@@ -7,16 +7,6 @@ function library_union_features(){
     register_nav_menu('footerTwo', 'Footer Location 2');
 }
 
-function library_union_post_types(){
-    register_post_type('event', array(
-        'public' => true,
-        'menu_icon' => 'dashicons-calendar',
-        'labels' => array(
-            'name' => 'Events'
-        )
-    ));
-}
-
 function library_union_styles() {
     wp_enqueue_style('fontAwesome', "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
     wp_enqueue_style('googleFonts', "https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,300,400,400i,700,700i");
@@ -25,7 +15,6 @@ function library_union_styles() {
 
 add_action('wp_enqueue_scripts', 'library_union_styles');
 add_action('after_setup_theme', 'library_union_features');
-add_action('init', 'library_union_post_types');
 
 ?>
 
